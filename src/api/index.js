@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-const URL = import.meta.env.VITE_APP_URL
-// const URL ='http://localhost:4000'
+// const URL = import.meta.env.VITE_APP_URL
+const URL ='http://localhost:4000'
 const API = axios.create({ baseURL: URL })
 
 API.interceptors.request.use((req) => {
