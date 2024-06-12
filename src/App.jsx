@@ -1,6 +1,6 @@
-import { useEffect, useLayoutEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Route, Routes, json } from 'react-router-dom';
+import { Route, Routes} from 'react-router-dom';
 
 import './App.css';
 import { fetchAllQuestion } from './store/slices/questionSlice';
@@ -8,6 +8,7 @@ import { setCurrentUser } from './store/slices/currentUserSlice';
 import { getAllUsers } from './store/slices/userSlice';
 import { fetchWeather } from './api/weather';
 import { setTheme } from './store/slices/themeSlice';
+
 import Auth from './pages/auth/Auth';
 import Home from './pages/home/Home';
 import Navbar from './component/navbar/Navbar';
@@ -17,13 +18,12 @@ import DisplayQuestion from './pages/questions/DisplayQuestion';
 import Tags from './pages/tags/Tags';
 import Users from './pages/users/Users';
 import UserProfile from './pages/userProfile/UserProfile';
-import ChatAi from './component/chatbot/ChatAi';
 import Subscription from './pages/subscription/Subscription';
 import Cancel from './pages/payment/Cancel';
 import Success from './pages/payment/Success';
 
 
-function App() {
+const App=()=> {
 
   const [toggleTheme, setToggleTheme] = useState(false)
   const [weather, setWeather] = useState();

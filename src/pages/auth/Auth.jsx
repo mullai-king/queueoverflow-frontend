@@ -4,7 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import Spinner from '../../component/spinner/Spinner';
 
 import './auth.css';
-import icon from '../../assets/icon.png';
+import icon from '../../assets/queueoverflow.png';
 import AboutAuth from './AboutAuth';
 import { login, signup } from '../../store/slices/authSlice';
 import LeftSidebar from '../../component/leftSidebar/LeftSidebar';

@@ -16,8 +16,7 @@ const QuestionDetails = () => {
     const { loading, error } = useSelector(state => state.questions);
     const location = useLocation();
 
-    // const url = process.env.REACT_APP_SHARE_URL || "http://localhost:3000"
-    const url =  "http://localhost:3000"
+    const url = import.meta.env.VITE_APP_SHARE_URL 
 
     const handleShare = () => {
         const fullUrl = url + location.pathname;
